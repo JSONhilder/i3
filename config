@@ -31,7 +31,7 @@ font pango:DejaVu Sans Mono 10
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id alacritty 
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -191,8 +191,8 @@ bar {
 
 # titles
 title_align center
-# for_window [class=".*"] title_format "%class"            
-# for_window [title="~/.nvim.appimage"] title_format "Nvim: %" 
+# for_window [class=".*"] title_format "%class"
+# for_window [title="~/.nvim.appimage"] title_format "Nvim: %"
 
 # Theme colors
 # Window active color
@@ -202,9 +202,9 @@ title_align center
   client.focused_inactive #282828 #282828 #ebdbb2 #454948
   client.unfocused        #282828 #282828 #ebdbb2 #454948
   client.urgent           #CB4B16 #FDF6E3 #ebdbb2 #268BD2
-  client.placeholder      #000000 #0c0c0c #ffffff #000000 
+  client.placeholder      #000000 #0c0c0c #ffffff #000000
 
-  client.background       #2B2C2B      
+  client.background       #2B2C2B
 
 #setup screens
 exec --no-startup-id xrandr --output HDMI-0 --primary --right-of DVI-I-0
@@ -213,7 +213,7 @@ exec --no-startup-id xrandr --output HDMI-0 --primary --right-of DVI-I-0
 exec --no-startup-id nvidia-settings --assign CurrentMetaMode="DVI-I-0:1920x1080_60 +0+0 { ForceFullCompositionPipeline = On }, HDMI-0:1920x1080_60 +1920+0 { ForceFullCompositionPipeline = On }
 
 # Nitrogen
-exec --no-startup-id nitrogen --restore;
+#exec --no-startup-id nitrogen --restore;
 
 exec_always --no-startup-id compton -b
 
@@ -221,5 +221,5 @@ exec_always --no-startup-id compton -b
 # Open specific applications in floating mode
 ########################################################
 for_window [title="mate-session-saver"] floating enable border pixel 0
-for_window [title=".*Emulator.*"] floating enable border pixel 0 
+for_window [title=".*Emulator.*"] floating enable border pixel 0
 for_window [title=".*Android.*"] floating enable:
